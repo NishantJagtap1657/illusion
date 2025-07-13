@@ -1,0 +1,128 @@
+*{
+    margin: 0%;
+    padding: 0%;
+box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.bigcontainer{
+    height: 100%;
+    width: 100%;
+    background-color:lightskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    height:90%;
+    width: 90%;
+    background: rgb(212, 205, 205);
+    display: grid;
+    padding: 4px;
+    row-gap: 1px;
+    column-gap: 1px;
+    grid-template-rows: repeat(10,1fr);
+    grid-template-columns: repeat(10,1fr);
+}
+.box1{
+    background: #f9f5f5;
+    /* border: 1px solid red; */
+    display: flex; 
+   /* justify -content: center;
+    align-items: center; */
+}
+
+.b1{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    background-color: black;
+    margin-right: 35px;
+    margin-top: 38px;
+    animation-name: leftright;
+    animation: leftright 2s linear 2s infinite alternate none;
+}
+@keyframes leftright{
+    from{
+      
+        left: 1%;
+    }
+    to{
+       
+        left: 80%;
+    }
+}
+
+.b2{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    background-color: black;
+    margin-left: 53px;
+    margin-bottom: 38px;
+    margin-top: 2px;
+    
+     animation-name: rightleft;
+    animation: rightleft 2s linear 2s infinite alternate none;
+}
+@keyframes rightleft{
+    from{
+        
+    right: 1%;
+    }
+    to{
+        
+        right: 78%;
+    }
+}
+.box0{
+    background: black;
+    /* border: 1px solid red; */
+    display: flex;
+}
+.w1{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    background-color: white;
+    margin-right: 35px;
+    margin-top: 38px;
+    animation-name: bleftright;
+    animation: bleftright 2s linear 2s infinite alternate none;
+}
+@keyframes bleftright{
+    from{
+      
+        left: 1%;
+    }
+    to{
+       
+        left: 80%;
+    }
+}
+
+.w2{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    background-color: white;
+    margin-left: 53px;
+    margin-bottom: 38px;
+    margin-top: 2px;
+    
+     animation-name: brightleft;
+    animation: brightleft 2s linear 2s infinite alternate none;
+}
+@keyframes brightleft{
+    from{
+        
+    right: 1%;
+    }
+    to{
+        
+        right: 78%;
+    }
+}
